@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace c0723560
@@ -9,18 +10,19 @@ namespace c0723560
     class Program
     {
         static void Main(string[] args)
+
+
+
+
+    static void Download()
         {
-            HelloWorld hw = new HelloWorld();
-            hw.Hello();
-        }
-    }
-    class HelloWorld
-    {
-        public void Hello()
-        {
-            Console.WriteLine("Hello World");
+            Thread.Sleep(3000);
         }
 
-        public int Add(int a, int b) { return a + b; }
+
+
+
+
+
     }
 }
