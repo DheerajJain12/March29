@@ -20,7 +20,10 @@ namespace c0723560
 
     static void Download()
         {
-            Thread.Sleep(3000);
+            Task.Run(() => {
+                Thread.Sleep(3000);
+                Console.WriteLine("download complete");
+            });
         }
 
 
