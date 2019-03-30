@@ -10,7 +10,11 @@ namespace c0723560
     class Program
     {
         static void Main(string[] args)
-
+        {
+            Console.WriteLine("downloading a file");
+            Download();
+            Console.ReadLine();
+        }
 
 
 
