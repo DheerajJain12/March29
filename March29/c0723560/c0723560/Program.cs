@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -31,9 +32,12 @@ namespace c0723560
 
         class Network
         {
-            static public Task Download()
+            public static async Task Download()
             {
-                return Task.Run(() => Thread.Sleep(3000));
+                HttpClient client = new HttpClient();
+                
+                var data = await client.GetStringAsync("http://torontopubliclibrary.ca");
+                Console.WriteLine("Download Complete");
             }
         }
     }
