@@ -9,7 +9,7 @@ namespace c0723560
 {
     class Program
     {
-        public static object Network { get; private set; }
+
 
         static void Main(string[] args)
         {
@@ -37,7 +37,7 @@ namespace c0723560
             }
         }
     }
-
+}
   
 
 
